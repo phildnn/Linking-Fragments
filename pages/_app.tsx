@@ -7,12 +7,26 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className="container">
       <Head>
-        <title>Leigh's Blog</title>
+        <title>Fragmentations</title>
       </Head>
-      <nav>
-        <Link href="/">/home</Link>
-      </nav>
-      <Component {...pageProps} />
+      <div className="sidebar">
+        <nav className="sidebar-sticky">
+          <div className="sidebar-about">
+            <h1>Linked Pieces</h1>
+            <p>From Programming to Finance - this blog contains articles, ideas, concepts and projects that spark my interest.</p>
+          </div>
+          <Link href="/">Home</Link>
+          <br />
+          <Link href="/">LinkedIn</Link>
+          <br />
+          <Link href="/">Imprint</Link>
+
+        </nav>
+      </div>
+      <div className="content">
+        <Component {...pageProps} />
+      </div>
+      
     </div>
   );
 }

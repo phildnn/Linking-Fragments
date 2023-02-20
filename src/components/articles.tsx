@@ -8,7 +8,10 @@ export default function Articles({ posts }: { posts: PostMeta[] }) {
       {posts.map((post) => (
         <li key={post.slug}>
           <div className={styles.title}>
-            <Link href={`/posts/${post.slug}`}>{post.title}</Link>
+              <span className="post-title">
+                <Link href={`/posts/${post.slug}`}>{post.title}</Link>
+              </span>
+            
           </div>
           <p>{post.excerpt}</p>
           <p className={styles.tags}>
