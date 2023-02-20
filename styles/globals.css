@@ -8,27 +8,27 @@
   
 
   @font-face {
-  font-family: 'Segoe UI Italic';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Segoe UI Italic'), url('../public/fonts/Segoe UI Italic.woff') format('woff');
-  }
-  
-
-  @font-face {
   font-family: 'Segoe UI Bold';
   font-style: normal;
   font-weight: normal;
   src: local('Segoe UI Bold'), url('../public/fonts/Segoe UI Bold.woff') format('woff');
   }
   
-
   @font-face {
-  font-family: 'Segoe UI Bold Italic';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Segoe UI Bold Italic'), url('../public/fonts/Segoe UI Bold Italic.woff') format('woff');
-  }
+    font-family: 'Inter Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('../public/fonts/Inter-Medium.ttf') format('tff');
+    }
+    
+  
+    @font-face {
+    font-family: 'Inter Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('../public/fonts/Inter-Bold.ttf') format('tff');
+    }
+
 
 
   
@@ -40,7 +40,7 @@ body {
 
 
  html {
-  font-family: Segoe UI Regular, Arial, Helvetica, sans-serif;
+  font-family: Inter Regular, Segoe UI Regular, Arial, Helvetica, sans-serif;
   text-align: justify;
   font-display: swap;
 }
@@ -79,7 +79,7 @@ body {
 
 .sidebar {
   text-align: center;
-  font-family: Segoe UI Regular;
+  font-family: Inter Regular, Segoe UI Regular;
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
   background-color: #202020;
@@ -112,7 +112,7 @@ body {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Segoe UI Bold", sans-serif;
+  font-family: "Inter Bold", "Segoe UI Bold", sans-serif;
   font-size: 2.5rem;
 }
 
@@ -282,7 +282,7 @@ figcaption {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: Segoe UI Bold, Helvetica, sans-serif;
+  font-family: Inter Bold, Segoe UI Bold, Helvetica, sans-serif;
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
@@ -316,7 +316,7 @@ p {
 
 strong {
   color: #303030;
-  font-family: Segoe UI Bold;
+  font-family: Inter Bold, Segoe UI Bold;
 }
 
 
@@ -389,7 +389,8 @@ pre code {
   background-color: transparent;
 }
 
-.post-title a{
+.post-title a {
+  font-family: Inter Bold, Segoe UI Bold, Arial, Helvetica, sans-serif;
   color: #6E85F7;
   font-size: 1.5em;
   font-weight: 400;

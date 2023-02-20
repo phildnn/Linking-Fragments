@@ -7,12 +7,12 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className="container">
       <Head>
-        <title>Fragmentations</title>
+        <title>Linking Fragments</title>
       </Head>
       <div className="sidebar">
         <nav className="sidebar-sticky">
           <div className="sidebar-about">
-            <h1>Linked Pieces</h1>
+            <h1>Linking Fragments</h1>
             <p>From Programming to Finance - this blog contains articles, ideas, concepts and projects that spark my interest.</p>
           </div>
           <Link href="/">Home</Link>

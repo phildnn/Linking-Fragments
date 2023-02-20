@@ -15,7 +15,7 @@ export default function TagPage({
       <Head>
         <title>Tag: {slug}</title>
       </Head>
-      <h1>Tag: {slug}</h1>
+      <p>Tag: {slug}</p>
       <Articles posts={posts} />
     </>
   );
